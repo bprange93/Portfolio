@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+body {
+    background-image: linear-gradient(to right,
+     rgba(0, 87, 128, 0.514),
+     rgba(128, 0, 75, 0.514)),
+     url(Img/HawaiiStock.jpg);
+     background-size: cover;
+}
+.Header{
+    font-style: bold;
+    font-weight: 700;
+
+}
+.Header__Name{    
+   margin-top: 3rem;
+   font-size: 3rem;
+}
+
+.Header__Name--first{
+    color: rgb(196, 28, 196);    
+    grid-area: first;
+    position: absolute;
+    left: 0px;
+    height: 50%;
+    z-index: -1;
+    margin-left: 14rem;
+}
+.Header__Name--last{
+    color: rgb(177, 177, 255);
+    grid-area: last;
+    position: absolute;
+    right: 0px;
+    height: 50%;
+    z-index: -1;
+    margin-top: 2rem;
+    margin-right: 12rem;
+}
+.row{
+    max-width: 100%;
+    margin: 0 auto;
+    
+
+}
+.col-1-of-2{
+    width: 50%;
+    
+}
+.grid-container{
+    position: absolute;
+    height: 50%;
+    display: grid;
+    grid-template-areas:
+    'first last'
+}
+.TwoLines{
+    height: 4rem;
+}
+.Greeting{
+    position: relative;
+}
+
+.naviagation-bar{ 
+    grid-gap: 12rem;   
+    position: 0;
+    height: 50%;
+    display: grid;
+    grid-template-areas:
+    'Home Contacts About Projects'
+    
+}
+/* .naviagation-bar > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  } */
+#Home{
+    color: rgb(177, 177, 255);
+    float: left;
+   
+}
+#Contacts{
+    color: rgb(177, 177, 255);
+    float: left;
+    
+}
+#About{
+    color: rgb(177, 177, 255);
+    
+}
+#Projects{
+    color: rgb(177, 177, 255);
+   
+}
+ul {
+    list-style-type: none;
+    width: 100%;
+    background-color: rgba(0, 87, 128, 0.692);
+    overflow: hidden;
+  }
+  
+  li {
+    display: inline;
+    margin-left: 4rem;
+    margin-right: 5rem;    
+  }
+  li a{
+
+  }
+
